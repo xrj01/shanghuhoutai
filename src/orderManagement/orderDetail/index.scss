@@ -1,0 +1,220 @@
+@import '../../colorConfig.scss';
+.order-detail-box{
+    .order-status-box{
+        // width: 975px;
+        margin-bottom: 15px;
+        background: $fff;
+        // padding-bottom: 42px;
+        .order-status{
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .order-status-brief{
+                display: flex;
+                margin-left: 50px;
+                .order-logo{
+                    text-align: center;
+                    margin-right: 100px;
+                    .img{
+                        margin-bottom: 6px;
+                    }
+                    .text{
+                        color: $B277E6;
+                    }
+                }
+                .brief-introduction{
+                    margin-right: 90px;
+                    line-height: 1;
+                    padding-top: 15px;
+                    .tit{
+                        font-size: 14px;
+                        color: $c33;
+                        margin-bottom: 10px;
+                    }
+                    .text{
+                        font-size: 12px;
+                        color: $c66;
+                    }
+                    .red{
+                        color: $D31E1E;
+                        font-size: 14px;
+                        font-weight: bold;
+                    }
+                }
+            }
+            .oprations{
+                cursor: pointer;
+                margin-right: 38px;
+                margin-bottom: 10px;
+                button{
+                    width: 90px;
+                    height: 40px;
+                    color: $c99;
+                    &:hover{
+                        color: $B277E6;
+                        border-color: $B277E6;
+                    }
+                }
+            }
+        }
+        .close-reason{
+            padding: 0 15px 42px;
+            .tit{
+                line-height: 1;
+                margin-bottom: 15px;
+                color: $c33;
+            }
+            .reason{
+                height: 120px;
+                border: 1px solid $ececec;
+                padding: 30px;
+                font-size: 12px;
+                color: $c66;
+            }
+        }
+    }
+    .order-step-and-info{
+        padding: 40px 15px ;
+        background: $fff;
+        .tit{
+            line-height: 1;
+            margin-bottom: 15px;
+            color: $c33;
+        }
+        .order-step{
+            margin-bottom: 40px;
+            .ant-steps-item-tail{
+                margin-left: 53px;
+                top: 24px;
+            }
+            .ant-steps-label-vertical .ant-steps-item-icon, .ant-steps-item-custom .ant-steps-item-icon{
+                margin-left: 22px;
+            }
+            .ant-steps-item-tail::after{
+                height: 2px;
+            }
+            .ant-steps-item-finish > .ant-steps-item-tail::after{
+                background-color: $B277E6;
+            }
+            .ant-steps-item-title{
+                font-size: 14px;
+            }
+        }
+        .order-track-box{
+            height: 46px;
+            background: #F1F7FE;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 15px;
+            margin-bottom: 30px;
+            .current-logistics{
+                font-size: 12px;
+                color: $B277E6;
+            }
+            .check-logistics{
+                button{
+                    color: $B277E6;
+                    border-color: $B277E6;
+                    width: 62px;
+                    height: 24px;
+                    font-size: 12px;
+                    text-align: center;
+                    padding: 0;
+                }
+            }
+        }
+        .goods-table-box{
+            margin-bottom: 30px;
+            .table{
+                th.thead-bg{
+                    background: $ececec;
+                    padding: 12px 16px;
+                }
+                .thead{
+                    text-align: center; 
+                }
+                .ant-table-tbody > tr:hover:not(.ant-table-expanded-row) > td{
+                    background: $fff;
+                }
+                .ant-table-placeholder{
+                    border-radius: 0 0 4px 4px;
+                }
+                .ant-table-title, .ant-table-footer{
+                    padding: 0;
+                    border-radius: 0;
+                    background: $fff;
+                }
+                .table-footer{
+                    display: flex;
+                    font-size: 12px;
+                    padding: 0 15px;
+                    height: 40px;
+                    align-items: center;
+                    &>span{
+                        color: $c99;
+                    }
+                }
+                .order-goods-info{
+                    width: 100%;
+                    overflow: hidden;
+                    display: flex;
+                    justify-content: start;
+                    .goods-img{
+                        height: 70px;
+                        margin-right: 12px;
+                        padding: 7px;
+                        flex: 0 0 70px;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .goods-info{
+                        text-align: left;
+                        font-size: 12px;
+                        padding-top: 16px;
+                        height: 100%;
+                        .goods-name,.goods-props{
+                            line-height: 1;
+                            width: 266px; 
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                        }
+                        .goods-name{
+                            color: $c66;
+                            margin-bottom: 12px;
+                            a{
+                                color: #666;
+                            }
+                            a:hover{
+                                color: $B277E6;
+                            }
+                        }
+                        .goods-props{
+                            color: $c99;
+                        }
+                    }
+                }
+            }
+        }
+        .receiving-info{
+            .info-box{
+                padding: 24px 15px;
+                line-height: 30px;
+                border: 1px solid $ececec;
+                font-size: 12px;
+                .info-row{
+                    display: flex;
+                    .row-tit{
+                        display: inline-block;
+                        width: 65px;
+                        text-align: justify;
+                        text-align-last: justify;
+                    }
+                }
+            }
+        }
+    }
+}

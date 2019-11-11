@@ -1,0 +1,96 @@
+@import '../colorConfig';
+.forgetPwd-box{
+   background: #F6F5F5;
+  .forgetPwd-box-header{
+    
+    border-bottom: 1px solid #ccc;
+    .forgetPwd-box-nav{
+      width: 1200px;
+      margin: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      img{
+        margin: 20px 20px 20px 0;
+      }
+    }
+  }
+  .forgetPwd-box-container{
+    width: 1200px;
+    height: 800px;
+    margin: auto;
+    margin-top: 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+    .forgetPwd-container-title{
+      font-size: 16px;
+      padding: 30px 0 0 40px;
+    }
+    .forgetPwd-sub-container{
+      width: 600px;
+      margin: auto;
+      margin-top: 30px;
+      .forgetPwd-hint{
+        margin: 50px 90px 30px;
+        
+      }
+      .ant-input-group-addon {
+          padding: 0;
+          
+      }
+      .code-img{
+        margin-left: 146px;
+        padding-bottom: 10px;
+        margin-top: -4px;
+        img{
+          width: 102px;
+          height: 40px;
+          margin-right: 20px;
+        }
+        .code-img-click{
+          color: #1ABC9C;
+          cursor: pointer;
+        }
+      }
+      .note-code{
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 7px;
+      }
+      
+    }
+    //确认密码
+    .set-new-password{
+      margin-top: 100px;
+    }
+    //设置成功
+    .setSucceed-box{
+      text-align: center;
+      margin-top: 100px;
+      .setSucceed-title{
+        font-size: 20px;
+        font-weight: bold;
+      }
+      button{
+        background: #1ABC9C;
+        color: #fff;
+        width: 178px;
+        height: 46px;
+      }
+      .setSucceed-margin{
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  input,button{
+    height: 40px;
+  }
+  .send-code{
+    margin-left: 10px;
+  }
+  .blue{
+    color: #409CFF;
+  }
+}

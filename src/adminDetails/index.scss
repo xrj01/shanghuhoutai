@@ -1,0 +1,250 @@
+@import "./../colorConfig";
+.goodDetails{
+  background-color: $f6f;
+}
+.goods-details-box{
+
+  width: 1200px;
+  min-height: 800px;
+  margin: -10px auto 0 !important;
+  .mt32{
+    margin-top: 32px;
+  }
+  .goods-introduce{
+    width: 100%;
+    display: flex;
+    background: $fff;
+    padding: 10px 0 10px 10px;
+    .goods-img-big-box{
+      width: 420px;
+    }
+    .goods-introduce-box{
+      flex: 1;
+      padding-left: 20px;
+      .goods-title-box{
+        width: 100%;
+        display: flex;
+        border-bottom: solid 1px $borderBottom;
+        padding:10px 10px 30px 10px !important;
+        position: relative;
+        .goods-freight{
+          position: absolute;
+          left: 10px;
+          bottom: 10px;
+          color: $c33;
+          span{
+            color: $c99;
+          }
+        }
+        h4{
+          width: 58%;
+          color: $c33;
+          font-size: 18px;
+          font-weight: 600;
+        }
+        .goods-price{
+          width: 230px !important;
+          text-align: center;
+          color: $c66;
+          font-size: 14px;
+          span{
+            color: $red;
+            font-size: 26px;
+          }
+        }
+        .goods-collection-box{
+          flex: 1;
+          text-align: right;
+          font-size: 14px;
+          padding-right: 10px;
+          padding-top: 6px;
+          i{
+            font-size: 16px;
+            margin-right: 5px;
+            vertical-align: sub;
+          }
+          span{
+            cursor: pointer;
+          }
+          span.collection{
+            color: $red;
+          }
+        }
+      }
+
+      .goods-instructions-box{
+        padding: 10px;
+        border-bottom: solid 1px $borderBottom;
+        ul{
+          margin: 0;
+        }
+        li{
+          display: flex;
+          padding: 5px 0;
+          p{
+            flex: 1;
+            margin: 0;
+            color: $c99;
+            font-size: 14px;
+            span{
+              color: $c33;
+            }
+          }
+        }
+      }
+
+      .goods-specifications-box{
+        padding: 10px;
+        border-bottom: solid 1px $borderBottom;
+        .goods-specifications{
+          color: $c99;
+          font-size: 14px;
+          padding: 0 !important;
+          .goods-specifications-list-box{
+            display: flex;
+            .goods-specifications-name{
+              width: 70px;
+            }
+            .goods-specifications-span{
+              flex: 1;
+              width: 0;
+              flex-wrap: wrap;
+              span{
+                padding: 0 10px;
+                margin-left: 8px;
+                margin-bottom: 10px;
+                border:solid 1px $borderBottom;
+                color: $c33;
+                border-radius: 4px;
+                cursor: pointer;
+                &.active{
+                  border:solid 1px $red;
+                  color: $red;
+                }
+                &.noCan{
+                  background: #eee;
+                  cursor: no-drop;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .goods-pay-number-box{
+        padding: 10px;
+        .goods-number-box{
+          padding-bottom: 10px;
+          padding-top: 10px;
+          color: $c99;
+          font-size: 14px;
+          display: flex;
+          align-items: center;
+          .goods-number-btn{
+            width: 120px;
+            border:solid 1px $borderBottom;
+            border-radius: 4px;
+            overflow: hidden;
+            display: flex;
+            button{
+              width: 30px;
+              border:none;
+              background: $fff;
+              font-weight: 600;
+              outline:none;
+              &:last-child{
+                    &:hover{
+                    color: $red;
+                    }
+                }
+            }
+            input[type='text']{
+              width: 60px;
+              outline:medium;
+              outline:none;
+              border:none;
+              border-right: solid 1px $borderBottom;
+              border-left: solid 1px $borderBottom;
+              text-align: center;
+              &:focus{
+                outline:none;
+                box-shadow: 0 0 0 0 $fff;
+              }
+          }
+          }
+        }
+        .goods-pay-btn{
+          display: flex;
+          padding: 20px 20px 20px 0;
+          .ant-btn{
+            margin-right: 25px !important;
+            height: 40px;
+            padding: 8px 20px;
+            border:solid 1px $borderBottom;
+            color: $c66;
+            &:hover{
+              border:solid 1px $red;
+              color: $red;
+            }
+          }
+          .add-shopping-btn{
+            background: $red;
+            border:solid 1px $red;
+            color: $fff;
+            &:hover{
+              color: $fff;
+            }
+          }
+          i{
+            font-size: 22px;
+            vertical-align: middle;
+          }
+          .pay-btn{
+            border:solid 1px $red;
+            color: $red;
+          }
+
+        }
+      }
+    }
+  }
+  .bottom{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: flex;
+  }
+  .content-right{
+    background-color: #fff;
+    width: 940px;
+    float: left;
+    margin-left: 10px;
+    overflow: hidden;
+    .content-nav{
+      width: 100%;
+      height: 50px;
+      background: #EEEEEE;
+      display: flex;
+      .content-list-nav{
+        width: 136px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        font-size: 16px;
+        position: relative;
+      }
+      div.active{
+        color: $red;
+        background: $fff;
+      }
+      div.active:after{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 2px;
+        background: $red;
+      }
+    }
+  }
+}

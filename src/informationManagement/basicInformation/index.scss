@@ -1,0 +1,92 @@
+@import '../../colorConfig';
+.basic-Information-box{
+    background: #F6F5F5;
+    //min-height: 800px;
+    
+    .basic-Information-title{
+        padding-bottom: 18px;
+        font-size:12px;
+    }
+    .basic-Information-form{
+        padding-bottom: 20px;
+        background: $fff;
+        /* .img-file{
+            display: flex;
+            flex-direction: row;
+            
+        } */
+        .basic-Information-form-img{
+            padding-top: 50px;
+            padding-bottom: 28px;
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            height: 190px;
+            .ant-upload-list-picture-card{
+                // height: 104px;
+            }
+            .basic-Information-img-title{
+                width: 122px;
+                display: inline-block;
+                text-align: right;
+            }
+            .basic-img-text{
+                font-size: 12px;
+                color: #999;
+                position: absolute;
+                top: 160px;
+                left: 122px;
+            }
+        }
+        .basic-Information-form-info{
+            color: #333;
+            p{
+                margin: 0;
+                padding: 0;
+            }
+            div{
+                display: flex;
+                flex-direction: row;
+                margin: 20px 0;
+            }
+            span{
+                width: 122px;
+                display: inline-block;
+                text-align: right;
+            }
+            :nth-child(1){
+                margin-top: 0px;
+            }
+        }
+        form{
+            //padding-top: 50px;
+            .ant-form-item{
+                margin-bottom: 16px;
+            }
+            button{
+                width:120px;
+                height:42px;
+                margin-left: 100px;
+            }
+        }
+    }
+    
+    
+}
+.spin{
+    //left: -33% !important;
+}
+//公共弹窗
+.public-model{
+    height: 200px;
+    line-height: 200px;
+    
+    div{
+        font-size: 16px;
+        padding: 0 12px;
+        span{
+            color: #ccc;
+        }
+    }
+
+}

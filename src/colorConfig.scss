@@ -1,0 +1,98 @@
+$c33:#333;
+$c99:#999;
+$c66:#666;
+$fff:#fff;
+$headerBg:#363636;
+$borderBottom:#E7E7E7;
+$c7e:#7E7E7E;
+$blue:#2A7CE7;
+$B277E6: #2277E6;
+$stepBorder:#E5E5E5;
+$stepBg:#7ABD54;
+$cDC:#DCDEDD;
+$eee:#eee;
+$selectClassBg:#6CACFF;
+$red:#D01D00;
+$menuLiBg:#F0F0F0;
+$ececec: #ECECEC;
+$EEE: $eee;
+$D31E1E: #D31E1E;
+$f3f: #f3f3f3;
+$B9B9:#9B9B9B; // ← 字体标题深灰.
+$F6F6:#F6F6F6; // 详情页面标题背景
+$b:#000; // 详情页面标题按钮组成颜色黑
+$F0C400:#F0C400; // 详情标题组成文字黄
+$D2red:#D20602; // 侧边导航hover边框颜色
+$B2277E6: #2277E6; 
+$ea:#eaeaea;
+$fe:#FEEAEA;
+$ec:#ECECEC;
+$B277E6: #2277E6;
+$f6f:#F6F5F5; // ← body背景灰
+
+.padding-10{padding: 10px}
+.padding-15{padding: 15px}
+.padding-20{padding: 20px}
+.margin-bottom-10{margin-bottom: 10px!important;}
+.margin-bottom-20{margin-bottom: 20px!important;}
+.width-100{width: 100px!important;}
+.width-150{width: 150px!important;}
+.width-200{width: 200px!important;}
+.width-250{width: 250px!important;}
+.width-300{width: 300px!important;}
+.width-500{width: 500px!important;}
+.width-1{width: 100%!important;}
+.line-height-30{line-height: 30px}
+.line-height-42{line-height: 42px}
+.text-right{text-align: right}
+.color-red{color: $red}
+.color-blue{color: $selectClassBg}
+.color-gray{color: #BFBFBF!important;}
+.cursor-pointer{cursor: pointer}
+.img-50{ width: 40px;}
+.account-security-title{
+//   padding: 20px 0 18px 15px;
+//   margin-bottom: 15px;
+//   background: $fff;
+  padding-bottom: 18px;
+  font-size:12px;
+}
+.blue{
+  color: $blue;
+  cursor: pointer;
+}
+.red{
+    color: $red;
+}
+.green{
+    color: #31B673;
+}
+.hover-blue{
+    color: $c66;
+    &:hover{
+        color: $blue;
+    }
+}
+
+.ant-form-item-required{
+    color: #666 !important;
+}
+
+.ant-modal-footer{
+    border-top: none  !important;
+    padding: 0 40px 40px 40px !important;
+    .ant-btn{
+        width: 80px !important;
+        height: 40px !important;
+        margin-left: 10px !important;
+        &:first-child{
+            color: $c99 !important;
+        }
+    }
+}
+.ant-modal-body{
+    padding: 40px 40px 16px !important;
+    input{
+        height: 40px!important;
+    }
+}

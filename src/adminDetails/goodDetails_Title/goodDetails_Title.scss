@@ -1,0 +1,46 @@
+@import "../../colorConfig";
+.title_box{
+  margin-top: 20px;
+  background-color: $F6F6;
+  .left_box{
+    width: 6px;
+    height: 40px;
+    background-color: $b;
+    margin-right: 10px;
+    float: left;
+  }
+  .conter_box{
+    width: 170px;
+    height: 40px;
+    background-color: $b;
+    float: left;
+
+  }
+  .sanjiao{
+    width:0;
+    height:0;
+    border-width:20px 0 20px 20px;
+    border-style:solid;
+    border-color:transparent transparent transparent $b;
+    float: left;
+  }
+  p{
+    margin: 0;
+  }
+  .zh{
+    color: #fff;
+    float: left;
+   font-size: 17px;
+    font-weight: 600;
+    line-height: 40px;
+    margin-left: 12px;
+  }
+  .us{
+    color: $F0C400;
+    float: left;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 40px;
+    margin-left: 10px;
+  }
+}

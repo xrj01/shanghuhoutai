@@ -1,0 +1,78 @@
+@import "../../colorConfig";
+.trateName_box{
+  float: left;
+  .trateName{
+    width: 248px;
+    padding-bottom: 50px;
+    background-color: #fff;
+  }
+  .c-title{
+    width: 230px;
+    border-bottom: 1px $f3f solid;
+    //text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 9px;
+    padding: 22px 0;
+    line-height: 1;
+    p{
+      margin: 0;
+    }
+  }
+  .tel_box{
+    margin-left: 15px;
+    margin-top: 16px !important;
+    font-size: 12px;
+    line-height: 22px;
+    p{
+      margin: 0;
+    }
+    span{
+      color:$B9B9;
+    }
+  }
+  .button:hover{
+    color: $red;
+    border: 1px $red solid ;
+
+  }
+  .button{
+    width: 106px;
+    height: 32px;
+  }
+  .button:nth-child(2){
+  margin-left: 10px;
+  }
+  .button_box{
+    /* margin-left: 14px;
+    margin-top: 15px !important;
+    margin-bottom: 15px !important; */
+    padding: 15px 15px 15px 0;
+    display: flex;
+    justify-content: space-between;
+    button{
+      color: $c66!important;
+      font-size: 12px;
+      &:hover{
+        color: $red!important;
+        border-color: $red;
+      }
+      &:active,&:focus{
+        color: $red!important;
+        border-color: $red;
+      }
+      &:first-child{
+        margin-right: 20px;
+      }
+    }
+  }
+  .description{
+    margin-left: 15px;
+    margin-right: 18px;
+    width: 215px;
+    overflow: hidden;
+    font-size: 12px;
+    text-align: justify;
+  }
+
+}

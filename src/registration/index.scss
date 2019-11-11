@@ -1,0 +1,41 @@
+.SettledIn-box{
+  margin-top: 30px;
+  .step-box{
+    height: 184px;
+    background: #fff;
+    padding: 45px 250px;
+    //border-radius: 4px;
+    margin-bottom: 20px;
+    .ant-steps-label-vertical .ant-steps-item-icon{
+      margin-left: 22px;
+    }
+    .ant-steps-item-tail{
+      top: 23px;
+      width: 192px;
+    }
+    .ant-steps-item-tail::after{
+      height: 2px;
+    }
+    .ant-steps-item-finish > .ant-steps-item-tail::after{
+      background-color: #7ABD54 !important;
+    }
+    .ant-steps-label-vertical .ant-steps-item-tail{
+      margin-left: 54px;
+    }
+  }
+  .form-box{
+    background: #fff;
+    //border-radius: 4px;
+    padding: 30px 0;
+    .form{
+      width: 600px;
+      margin: 0 auto;
+      input{
+        height: 40px;
+      }
+      button{
+        height: 40px;
+      }
+    }
+  }
+}

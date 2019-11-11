@@ -1,0 +1,219 @@
+@import "./../../colorConfig";
+.release-product-box{
+  width: 100%;
+  .release-step-box{
+    width: 100%;
+    background: $fff;
+    padding: 50px 200px 45px 200px;
+    .ant-steps-item-tail{
+      margin-left: 64px;
+      padding: 3.5px 30px;
+      top: 25px;
+    }
+    .ant-steps-item-finish > .ant-steps-item-tail::after{
+        background: #7abd54;
+    }
+    .step-icon-box{
+      width: 56px;
+      display:block;
+      //height: 56px;
+      border-radius: 50%;
+      //border:solid 1px $stepBorder;
+      color: $cDC;
+      text-align: center;
+      //line-height: 56px;
+      i{
+        font-size: 30px;
+      }
+    }
+    .step-icon-bg{
+      background: $stepBg;
+      color: $fff;
+      border:none;
+    }
+    .ant-steps-item-title{
+      margin-top: 10px;
+    }
+    .ant-steps-item-title::after{
+      height: 2px;
+    }
+    .ant-steps-item-finish > .ant-steps-item-content > .ant-steps-item-title::after{
+      background-color:$stepBg !important;
+    }
+    .ant-steps-item-content{
+      width: 132px;
+    }
+  }
+
+  .commodities-editor-box{
+    width: 100%;
+    background: $fff;
+    margin-top: 20px;
+    padding: 15px 15px 15px 30px;
+
+    .select-class-box{
+      width: 100%;
+      display: flex;
+      padding: 20px 0;
+      .select-class-list{
+        padding-top: 50px;
+        width: 32%;
+        margin-right: 1.3%;
+        height: 350px;
+        position: relative;
+        border:solid 1px $borderBottom;
+        .history-box{
+          width: 100%;
+          padding: 10px;
+          height: 50px;
+          position: absolute;
+          left: 0;
+          top: 0;
+          background: $fff;
+          line-height: 30px;
+        }
+        &:last-child{
+          margin: 0;
+        }
+        >ul{
+          width: 100%;
+          margin: 0;
+          height: 290px;
+          overflow: auto;
+          li{
+            width: 100%;
+            line-height: 30px;
+            padding: 0 10px;
+            color: $c33;
+            font-size: 14px;
+            cursor: pointer;
+            &:hover{
+              background: $eee;
+            }
+            &.active{
+              background: $selectClassBg;
+              color: $fff;
+            }
+          }
+        }
+      }
+    }
+
+    .current-select{
+      width: 100%;
+      padding: 10px;
+      background: #F7FAFF;
+      color: #2277E6;
+    }
+  }
+
+  .step-edit-goods-box{
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .edit-release-goods-box{
+    width: 100%;
+    font-size: 14px;
+    color: $c33;
+    h4{
+      font-size: 16px;
+      font-weight: 600;
+    }
+    p{
+      margin: 0;
+      color: #AAA7A7;
+      font-size: 12px;
+    }
+    .attribute-table-box{
+      width: 100%;
+      border:solid 1px $borderBottom;
+      ul{
+        width: 100%;
+        margin: 0;
+        li{
+          width: 100%;
+          display: flex;
+          align-items: center;
+          border-bottom:solid 1px $borderBottom;
+          >span{
+            width: 100px;
+            text-align: center;
+          }
+          .attribute-list{
+            flex: 1;
+            padding: 0 10px;
+            border-left: solid 1px $borderBottom;
+          }
+          &:last-child{
+            border:none;
+          }
+        }
+      }
+    }
+    .ant-table-thead > tr > th, .ant-table-tbody > tr > td{
+      padding: 8px !important;
+      text-align: center;
+    }
+    .goods-image-box{
+      width: 100%;
+      display: flex;
+      padding: 20px 10px;
+      border:solid 1px $borderBottom;
+      align-items: center;
+      justify-content: space-around;
+      .ant-upload-picture-card-wrapper{
+          height: 104px;
+      }
+      .goods-image-list{
+        width: 104px;
+        height: 104px;
+        .ant-upload-list-picture-card .ant-upload-list-item{
+          margin: 0 !important;
+        }
+      }
+    }
+    .editor-convert-box{
+      width: 100%;
+      .demo-wrapper{
+        overflow: auto;
+        padding: 10px;
+        border:solid 1px $borderBottom;
+        min-height: 500px;
+      }
+    }
+  }
+
+  .release-complete-box{
+    width: 100%;
+    text-align: center;
+    padding: 100px 0;
+    .release-complete-title{
+      text-align: center;
+      i{
+        font-size: 50px;
+        color: $stepBg;
+        margin-bottom: 20px;
+      }
+    }
+    .release-complete-operation{
+      width: 100%;
+      text-align: center;
+      margin-top: 30px;
+      span{
+        color: #1890ff;
+        cursor: pointer;
+      }
+    }
+    h4{
+      font-size: 16px;
+      color: $c33;
+      font-weight: 600;
+    }
+  }
+  .ant-checkbox-wrapper + .ant-checkbox-wrapper{
+    margin-left: 0!important;
+    margin-right: 8px;
+  }
+}

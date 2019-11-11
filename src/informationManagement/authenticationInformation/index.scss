@@ -1,0 +1,115 @@
+@import './../../colorConfig';
+.authentication-Information-box{
+    background: #F6F5F5;
+    
+    //认证成功
+    .authentication-Information-title{
+        padding-bottom: 18px;
+        font-size:12px;
+    }
+    .authentication-Information-succeed{
+        background: $fff;
+        .authentication-Information-info{
+            display: flex;
+            flex-direction: row;
+            height: 100px;
+            padding: 50px 0 0 50px;
+            .authentication-icon{
+                font-size: 30px;
+                color: #0E6621;
+                vertical-align: middle;
+                padding-top: 10px;
+            }
+        }
+        .authentication-Information-box{
+                background: #eee;
+                height: 40px;
+                line-height: 40px;
+                font-size: 14px;
+                padding-left: 10px;
+                margin: 40px 20px;
+
+        }
+        .authentication-Information-data{
+            display: flex;
+            flex-direction: row;
+            margin: 0 30px;
+            text-align: center;
+            padding-bottom: 324px;
+            .authentication-content{
+                width: 305px;
+                background: #eee;
+                height: 40px;
+                line-height: 40px;
+                .authentication-img-box{
+                    padding: 10px;
+                    height: 205px;
+                    border-left: 1px solid #eee;
+                    border-bottom: 1px solid #eee;
+                }
+                .border-right{
+                    border-right: 1px solid #eee;
+                }
+            }
+            
+            
+        }
+    }
+    
+    .paddleft{
+        padding-left: 20px;
+    }
+    .green{
+        color: $c33;
+        font-size: 16px;
+        margin-top: 5px;
+        margin-left: 20px;
+    }
+
+    // 认证失败
+    .authentication-failure{
+        margin:0 12px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ccc;
+        img{
+            width: 50px;
+            height: 50px;
+            margin: 20px 18px;  
+        }
+        .ml10{
+            margin-left: 10px;
+        }
+        .mt10{
+            margin-top: 6px;
+        }
+        .red{
+            color: red;
+        }
+    }
+    
+    
+}
+//弹窗
+.authentication-failure-modal{
+    padding: 40px 40px 20px;
+    .modal-ft{
+        font-size: 16px;
+    }
+    .modal-color{
+        color: #ccc;
+    }
+    .modal-margin{
+        margin: 20px 0;
+    }
+    .authentication-cause-failure{
+        border: 1px solid #ccc;
+        min-height: 100px;
+        color: red;
+        div{
+            text-indent: 8px;
+        }
+    }
+}
+.ft333{
+    color: #333;
+}

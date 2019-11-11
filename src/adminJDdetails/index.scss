@@ -1,0 +1,270 @@
+@import "./../colorConfig";
+.goodDetails{
+  background-color: $f6f;
+  .mt20{
+    margin-top: 32px;
+  }
+}
+.goods-details-box{
+    min-height: 800px;
+  width: 1200px;
+  margin: 0 auto;
+  .breadcrumb{
+    font-size: 12px;
+  }
+  .goods-introduce{
+    width: 100%;
+    display: flex;
+    background: $fff;
+    padding: 10px 0 10px 10px;
+    .goods-img-big-box{
+      width: 420px;
+    }
+    .goods-introduce-box{
+      flex: 1;
+      padding-left: 20px;
+      
+      .goods-title-box{
+        width: 100%;
+        display: flex;
+        border-bottom: solid 1px $borderBottom;
+        padding:0 10px 10px 0;
+        align-items: center;
+        h4{
+          width: 58%;
+          color: $c33;
+          font-size: 18px;
+          font-weight: 600;
+        }
+        .goods-price{
+          width: 230px;
+          text-align: center;
+          color: $c66;
+          font-size: 14px;
+          span{
+            color: $red;
+            font-size: 26px;
+          }
+        }
+        .goods-collection-box{
+          flex: 1;
+          text-align: right;
+          font-size: 14px;
+          padding-right: 10px;
+          i{
+            font-size: 16px;
+          }
+          span{
+            cursor: pointer;
+          }
+          span.collection{
+            color: $red;
+          }
+        }
+      }
+
+      .goods-instructions-box{
+        padding: 10px;
+        border-bottom: solid 1px $borderBottom;
+        ul{
+          margin: 0;
+        }
+        li{
+          display: flex;
+          padding: 5px 0;
+          p{
+            flex: 1;
+            margin: 0;
+            color: $c99;
+            font-size: 14px;
+            span{
+              color: $c33;
+            }
+          }
+        }
+      }
+
+      .goods-specifications-box{
+        padding: 10px;
+        border-bottom: solid 1px $borderBottom;
+        .goods-specifications{
+          color: $c99;
+          font-size: 14px;
+          padding:5px;
+          span{
+            padding: 0px 10px;
+            margin-left: 8px;
+            border:solid 1px $borderBottom;
+            color: $c33;
+            border-radius: 4px;
+            cursor: pointer;
+            &.active{
+              border:solid 1px $red;
+              color: $red;
+            }
+          }
+        }
+      }
+
+      .goods-pay-number-box{
+        padding: 10px;
+        .goods-number-box{
+          padding-bottom: 10px;
+          padding-top: 10px;
+          color: $c99;
+          font-size: 14px;
+          display: flex;
+          align-items: center;
+          .goods-number-btn{
+            width: 120px;
+            border:solid 1px $borderBottom;
+            border-radius: 4px;
+            overflow: hidden;
+            display: flex;
+            button{
+              width: 30px;
+              border:none;
+              background: $fff;
+              font-weight: 600;
+              outline:none;
+              &:last-child{
+                  &:hover{
+                    color: $red;
+                  }
+              }
+            }
+            input[type='text']{
+              width: 60px;
+              outline:medium;
+              outline:none;
+              border:none;
+              border-right: solid 1px $borderBottom;
+              border-left: solid 1px $borderBottom;
+              text-align: center;
+              &:focus{
+                outline:none;
+                box-shadow: 0 0 0 0 $fff;
+              }
+          }
+          }
+        }
+        .goods-pay-btn{
+          display: flex;
+          padding: 20px 20px 20px 0;
+          .ant-btn{
+            margin-right: 25px !important;
+            height: 40px;
+            padding: 8px 20px;
+            border:solid 1px $borderBottom;
+            color: $c66;
+          }
+          .add-shopping-btn{
+            background: $red;
+            border:solid 1px $red;
+            color: $fff;
+            i{
+              font-size: 20px;
+              vertical-align: middle;
+            }
+            &:hover{
+              color: $fff;
+            }
+          }
+          .pay-btn{
+            border:solid 1px $red;
+            color: $red;
+          }
+
+        }
+      }
+    }
+  }
+  .bottom{
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  .jd_details_box{
+    margin-bottom: 50px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    .jd_brief{
+      padding: 10px;
+      font-size: 12px;
+      text-align: justify;
+    }
+    .commodity-product-content{
+      background-color: #fff;
+      width: 940px;
+      margin-left: 20px;
+      .commodity-product-box{
+        width: 100%;
+        height: 50px;
+        background: #eee;
+        .commodity-product-title{
+          color: #d01d00;
+          background: #fff;
+          width: 136px;
+          height: 50px;
+          line-height: 50px;
+          text-align: center;
+          font-size: 16px;
+          border-top: 2px solid #d01d00;
+        }
+      }
+      .commodity-product-img{
+        padding-top: 20px;
+      }
+    }
+    .jd_trateName_box{
+      
+      width: 248px;
+      height: 100%;
+      padding-bottom: 40px;
+      background-color: #fff;
+      .trateName_box_title{
+        width: 230px;
+        border-bottom: 1px solid #f3f3f3;
+        font-size: 14px;
+        font-weight: 600;
+        margin-left: 9px;
+        // padding-top: 10px;
+        line-height: 1;
+        padding: 22px 0;
+        p{
+            margin: 0;
+        }
+        
+      }
+      .trateName_box_tel{
+        margin-top: 16px;
+        margin-left: 9px;
+        line-height: 22px;
+        font-size: 12px;
+      }
+      .trateName_box_btn{
+            margin-left: 9px;
+          display: flex;
+          justify-content: space-between;
+          padding:  15px 15px 15px 0;
+          button{
+              font-size: 12px;
+            color: $c66!important;
+            &:hover{
+              color: $red!important;
+              border-color: $red;
+            }
+            &:active,&:focus{
+              color: $red!important;
+              border-color: $red;
+            }
+            &:first-child{
+              margin-right: 20px;
+            }
+          }
+      
+      }
+    }
+  }
+  
+}

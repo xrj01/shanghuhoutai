@@ -1,0 +1,87 @@
+﻿一：构建开发环境
+
+1. 安装nodejs
+2. 安装编译器（例：vscode）
+3. 安装包管理工具（例：cnpm、yarn）
+ 
+	安装淘宝镜像
+    	npm install -g cnpm --registry=https://registry.npm.taobao.org
+    	说明: 安装了以后, 所有的cnpm 都可以写 cnpm( 速度回快很多哦 )
+
+	yarn安装
+	3.1 npm i yarn -g
+	3.2 配置yarn环境  
+			yarn global bin（查看全局模块安装目录）
+			到电脑，系统环境变量内，找到path，path内新增yarn全局模块安装目录
+4. 安装版本控制工具（svn或git）
+
+
+
+
+二：创建react项目
+
+1. 下载安装react脚手架
+	yarn global add create-react-app
+2. 创建react项目
+	create-react-app 项目名
+3. 启动项目
+	cd 项目
+	yarn start（启动项目）
+	
+	
+	
+	
+三：安装其他需要使用的插件或框架等
+
+	React-Router的使用
+	1. 下载 
+		yarn add react-router-dom@4.3.0 -D
+	2. 引入
+		import { BrowserRouter, Route, Switch } from 'react-router-dom'
+	3. 使用(创建路由容器，创建匹配规则)
+		<BrowserRouter>
+			<Switch>
+				<Route exact path='/' component={对应的组件} />
+				<Route path='/test' component={对应的组件} />
+				<Route component={容错组件} />
+			</Switch>
+		</BrowserRouter>
+		
+		
+	在React项目内，增加less loader
+	1. 使用eject解包项目，暴露webpack配置
+		yarn eject
+	2. 安装less环境
+		yarn add less less-loader -D
+	3. 修改webpack.config.dev.js 配置文件
+		3.1 新增.less文件后缀名配置
+			36行
+				修改为 const cssRegex = /\.(css|less)$/;
+		3.2 新增less-loader
+			69行
+			 //新增less-loader
+			{
+			  loader: require.resolve('less-loader')
+			}
+	
+	
+	
+	Ant Design Mobile（UI框架）
+	1. 下载安装
+		yarn add antd-mobile -D
+	2. 引入核心css
+		import 'antd-mobile/dist/antd-mobile.css'; (index.js)
+	3. 使用
+		import { 组件名 } from 'antd-mobile'
+		<组件名></组件名>
+	
+	
+	
+	Redux
+		
+		
+四：进行新项目项目开发
+	1. 删除项目内无用文件
+	2. 项目分类，新建文件夹（assets（静态资源，如imgs,styles），components）
+	
+	

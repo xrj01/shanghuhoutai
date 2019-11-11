@@ -1,0 +1,59 @@
+@import "./../colorConfig";
+.merchants-warp{
+  width: 100%;
+  margin: auto;
+  background: #F6F5F5;
+}
+.home-warp{
+  width: 1200px;
+  padding-top: 20px;
+  margin: auto;
+  display: flex;
+  .menu-box{
+    width: 210px;
+    background: $fff;
+    margin-right: 15px;
+    //min-height: 750px;
+    flex: 0 0 auto;
+    .menu-list{
+      width: 100%;
+      border-bottom: solid 1px $borderBottom;
+      padding-bottom: 20px;
+      padding-top: 10px;
+      h4{
+        
+        color: $c33;
+        font-size: 16px;
+        padding: 15px 20px 10px 20px;
+        margin-bottom: 0;
+        img{
+          vertical-align: middle;
+          padding-bottom: 5px;
+        }
+      }
+      a{
+        line-height: 30px;
+        padding-left: 48px;
+        display: block;
+        font-size: 14px;
+        color: #666;
+        border-left:solid 2px $fff;
+        &:hover{
+          color: $blue;
+        }
+        &.active{
+          background: #f7fbff;
+          border-left:solid 2px $blue;
+        }
+      }
+      &:last-child{
+        border:none;
+      }
+    }
+  }
+  .home-right{
+    //background-color: #fff;
+    flex: 1;
+    max-width: 1000px;
+  }
+}

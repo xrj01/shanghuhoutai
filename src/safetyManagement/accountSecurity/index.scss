@@ -1,0 +1,88 @@
+@import './../../colorConfig';
+.account-security-box{
+    
+    background: #F6F5F5;
+    
+    .account-security-title{
+        padding-bottom: 18px;
+        font-size:12px;
+    }
+    .account-security-content{
+        background: $fff;
+        padding-bottom: 165px;
+        .account-security-row{
+            padding: 50px 0 50px 7px;
+            margin: 0 25px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .text-center{
+                display: flex;
+                align-items: center;
+            }
+            :nth-child(1){
+                line-height: 32px;
+            }
+            .account-icon{
+                vertical-align: middle;
+                height: 32px;
+            }
+            .account-icon-tel{
+                margin-left: 5px;
+            }
+            .account-security-col{
+                border-right: 1px solid #eee;
+                padding: 0 20px 0 40px;
+                margin-right: 20px;
+                font-weight: bold;
+                font-size: 14px;
+            }
+            
+            
+        }
+        .account-security-reminder{
+            margin: 100px 25px 0 25px;
+            border: 1px solid #eee;
+            
+            .account-reminder-title{
+                background: #EEF5FF;
+                padding: 13px 17px;
+            }
+            .account-reminder-list{
+                padding: 42px 0 72px 27px;
+                li{
+                    margin-top: 6px;
+                    margin-left: 14px;
+                    list-style-type:disc !important;
+                }
+                
+            }
+        }
+    }
+    .ft12{
+        font-size: 12px;
+    }
+    
+}
+
+/* .account-pwd-form,.account-tel-form{
+    margin-top: 20px !important;
+    input,button{
+        height: 40px;
+    }
+    .send-code{
+        margin-left: 10px;
+        vertical-align: middle;
+    }
+    .account-tel-form-text{
+        margin-bottom: 15px;
+        margin-left: 50px;
+    }
+    
+} */
+/* .account-security-amendPwd,.account-security-amendTel{
+    .ant-modal-footer{
+        border-top:none !important;
+    }
+} */

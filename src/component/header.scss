@@ -1,0 +1,30 @@
+.header-box{
+  background: #fff;
+  // margin-bottom: 30px;
+  .header{
+    padding: 24px 0;
+    display: flex;
+    justify-content: space-between;
+    .logo{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 220px;
+      height: 42px;
+      img{
+        width: 128px;
+        height: 100%;
+      }
+      .reg{
+        font-size: 16px;
+        font-weight: bold;
+      }
+    }
+    .tit-text{
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 42px;
+    }
+  }
+}

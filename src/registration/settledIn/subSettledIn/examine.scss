@@ -1,0 +1,114 @@
+.examine-box{
+  padding: 60px 20px 30px;
+  .examine-tips{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f4f4f4;
+    margin-bottom: 20px;
+    .examine-status{
+      width: 70px;
+      margin: 0 auto 40px;
+      text-align: center;
+      .icon{
+        margin-bottom: 20px;
+      }
+      .iconFails{
+        color: #D81E06;
+      }
+      span{
+        font-size: 16px;
+        font-weight: bold;
+        color: #333;
+      }
+    }
+    .text{
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 24px;
+    }
+    .line{
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+      span{
+        font-weight: bold;
+        color: #333;
+      }
+    }
+  }
+  .uploadMaterial{
+    .tit{
+      font-size: 16px;
+      color: #333;
+      font-weight: bold;
+      margin-bottom: 18px;
+    }
+    .img-box{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      div{
+        //width: 266px;
+        height: 196px;
+        border: 1px solid #eee;
+        margin-right: 25px;
+        padding: 6px 10px;
+        /* img{
+          width: 100%;
+          height: 100%;
+        } */
+      }
+    }
+  }
+  .reject{
+    width: 655px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    .reEdit{
+      color: #2277E6;
+      cursor: pointer;
+    }
+  }
+  .border{
+    margin-top: 7px;
+    border: 1px solid #EFEFEF;
+    background-color: #F3F3F3;
+    padding: 10px;
+  }
+
+
+  .authentication-Information-box-reg{
+    color: #333;
+    font-weight:bold;
+    font-size:16px;
+    margin-top: 40px;
+    margin-bottom: 18px;
+  }
+  .authentication-Information-data-reg{
+    display: flex;
+    flex-direction: row;
+    //margin: 0 30px;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 300px;
+    .authentication-content{
+        width: 305px;
+        //background: #eee;
+        height: 40px;
+        line-height: 40px;
+        .authentication-img-box{
+            padding: 10px;
+            height: 205px;
+            border: 1px solid #eee;
+            margin-right: 25px;
+        }
+        .border-right{
+            border-right: 1px solid #eee;
+        }
+    }
+    
+    
+  }
+}
